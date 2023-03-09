@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import {Link} from 'react-router-dom'
-import { Container, InputContainer, Input, Label, AddContainer, AddTitle } from './SearchBarStyle'
+import { Container, InputContainer, AddContainer, AddTitle } from './SearchBarStyle'
 import {GrAddCircle} from 'react-icons/gr'
+import {InputForm} from '../index'
 
 // type Props = {}
 
@@ -10,18 +11,13 @@ const SearchBar: React.FC = (): JSX.Element => {
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     setValue(e.target.value)
+    console.log(value)
   }
 
   return (
     <Container>
       <InputContainer>
-        <Label>What you looking for?</Label>
-        <Input
-          type="form"
-          name="searchbar"
-          value={value}
-          onChange={handleInputChange}
-        />
+        <InputForm name='searchbar' type='form' labelText='What are you looking for?' value={value} onChange={handleInputChange}/>
       </InputContainer>
       <AddContainer>
         <Link to={'/new_product'}>
