@@ -66,7 +66,7 @@ export const Description = styled.p`
 export const Price = styled.p`
   position: absolute;
   bottom: 0.5rem;
-  color: var(--black);
+  color: var(--grey);
   font-size: var(--font-size-xl);
   font-family: var(--main-font);
 

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import {Link} from 'react-router-dom'
 import { Container, InputContainer, Input, Label, AddContainer, AddTitle } from './SearchBarStyle'
 import {GrAddCircle} from 'react-icons/gr'
 
@@ -23,8 +24,10 @@ const SearchBar: React.FC = (): JSX.Element => {
         />
       </InputContainer>
       <AddContainer>
-        <AddTitle>Add <span>product</span></AddTitle>
-        <GrAddCircle/>
+        <Link to={'/new_product'}>
+          <AddTitle>Add <span>product</span></AddTitle>
+          <GrAddCircle id='add_icon'/>
+        </Link>
       </AddContainer>
     </Container>
   )

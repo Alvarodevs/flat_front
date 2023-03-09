@@ -16,7 +16,7 @@ const ProductCard: React.FC<IProduct> = ({name, description, image, isFavourite,
         <Description>{description}</Description>
         
       </InfoContainer>
-      <Price>{price / 100} €</Price>
+      <Price>{price / 100}€</Price>
     </Card>
   )
 }
