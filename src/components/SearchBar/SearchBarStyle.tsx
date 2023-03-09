@@ -4,15 +4,17 @@ export const Container = styled.div`
   padding: 0.5rem;
   margin: auto;
   display: flex;
-  flex-direction: column;
   text-align: center;
+`
+export const InputContainer = styled.div`
+  width: 80%;
 `
 
 export const Label = styled.label`
   font-size: var(--font-size-l);
   margin-bottom: 0.5rem;
   font-family: var(--main-font);
-  @media screen and (min-width: 760px){
+  @media screen and (min-width: 760px) {
     font-size: var(--font-size-xl);
   }
 `
@@ -23,14 +25,36 @@ export const Input = styled.input`
   border-radius: 10px;
   margin: auto;
   font-size: var(--font-size-l);
-  width:60%;
+  width: 80%;
 
-  :focus-visible{
+  :focus-visible {
     outline: none;
     border: 0.1rem solid var(--blue);
   }
+`
 
-  @media screen and (min-width: 760px){
-    width:60%;
+export const AddContainer = styled.div`
+  //width: fit-content;
+  align-self: center;
+  svg{
+    margin: 0.5rem 0;
+    font-size: var(--font-size-xl);
+  }
+`
+
+export const AddTitle = styled.h6`
+  font-size: var(--font-size-l);
+  font-family: var(--main-font);
+  
+  @media screen and (max-width: 620px) {
+    font-size: var(--font-size-m);
+    span{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 484px) {
+    span{
+      display: none;
+    }
   }
 `
