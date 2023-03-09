@@ -5,6 +5,18 @@ const GlobalStyle = createGlobalStyle`
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      // colors
+      --grey: #808080;
+      --blue: #101cb9;
+      --lightBlue: #a1e5fa;
+      --white: #ffffff;
+      --black: #0c0c0c;
+      // Font sizes
+      --font-size-s: 0.8rem;
+      --font-size-m: 1rem;
+      --font-size-l: 1.2rem;
+      --font-size-xl: 1.8rem;
+      --font-size-xxl: 2rem;
    }
  
    #root{
