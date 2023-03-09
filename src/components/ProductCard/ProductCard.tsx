@@ -1,20 +1,22 @@
 import { type IProduct } from '../../interfaces/IProduct'
+import { Card, ImgContainer, FavIcon, Name, Description, InfoContainer, Price } from './ProductCardStyle'
 import {AiFillHeart, AiOutlineHeart} from 'react-icons/ai'
 
 
-const ProductCard: React.FC<IProduct> = (props: IProduct): JSX.Element => {
+const ProductCard: React.FC<IProduct> = ({name, description, image, isFavourite, price, section} :IProduct ): JSX.Element => {
   return (
-    <div>
-      <div>
-        <img src={props.image} alt={props.name} />
-        {props.isFavourite ? <AiFillHeart/> : <AiOutlineHeart/>}
-      </div>
-      <div>
-        <p>{props.name}</p>
-        <p>{props.description}</p>
-        <p>{props.price / 100} €</p>
-      </div>
-    </div>
+    <Card>
+      <ImgContainer>
+        <img src={image} alt={name} />
+        <FavIcon>{isFavourite ? <AiFillHeart/> : <AiOutlineHeart/>}</FavIcon>
+        
+      </ImgContainer>
+      <InfoContainer>
+        <Name>{name}</Name>
+        <Description>{description}</Description>
+        <Price>{price / 100} €</Price>
+      </InfoContainer>
+    </Card>
   )
 }
 

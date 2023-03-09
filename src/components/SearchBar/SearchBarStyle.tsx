@@ -9,19 +9,21 @@ export const Container = styled.div`
 `
 
 export const Label = styled.label`
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-l);
   margin-bottom: 0.5rem;
   
   @media screen and (min-width: 760px){
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-xl);
   }
 `
 
 export const Input = styled.input`
   border: 1px solid var(--lightBlue);
-  padding: 0.3rem;
+  padding: 0.5rem;
   border-radius: 10px;
   margin: auto;
+  font-size: var(--font-size-l);
+  width:60%;
 
   :focus-visible{
     outline: none;
