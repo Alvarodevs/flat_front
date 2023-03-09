@@ -11,7 +11,7 @@ export const Container = styled.div`
 export const Label = styled.label`
   font-size: var(--font-size-l);
   margin-bottom: 0.5rem;
-  
+  font-family: var(--main-font);
   @media screen and (min-width: 760px){
     font-size: var(--font-size-xl);
   }
