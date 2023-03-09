@@ -65,20 +65,9 @@ export const Description = styled.p`
 
 export const Price = styled.p`
   position: absolute;
-  bottom: 0;
-  left: -10rem;
+  bottom: 0.5rem;
   color: var(--black);
   font-size: var(--font-size-xl);
   font-family: var(--main-font);
 
-  
-  @media screen and (max-width: 667px){
-    left: 1rem;
-  }
-  @media screen and (max-width: 570px){
-    left: -3rem;
-  }
-  @media screen and (max-width: 400px){
-    left: -10rem;
-  }
 `
