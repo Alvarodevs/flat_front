@@ -3,7 +3,7 @@ import { Container, Input, Label } from './SearchBarStyle'
 
 // type Props = {}
 
-const SearchBar = (): JSX.Element => {
+const SearchBar: React.FC = (): JSX.Element => {
   const [value, setValue] = useState<string>('')
   
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {

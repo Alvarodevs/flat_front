@@ -1,12 +1,12 @@
 import { Div } from './HomeStyle'
 // Components
-import { SearchBar } from '../../components'
+import { SearchBar, GridContainer } from '../../components'
 
-function Home(): JSX.Element {
+const Home: React.FC = (): JSX.Element => {
   return (
     <Div>
       <SearchBar />
-      Home
+      <GridContainer/>
     </Div>
   )
 }

@@ -5,7 +5,7 @@ import {RxMagnifyingGlass} from 'react-icons/rx'
 
 // type Props = {}
 
-const Header = (): JSX.Element => {
+const Header: React.FC = (): JSX.Element => {
   return (
     <Container>
       <Logo src={logo} alt="logo"/>
