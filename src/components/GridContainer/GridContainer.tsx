@@ -8,7 +8,7 @@ const GridContainer: React.FC = () => {
   return (
     <Container>
       {mock_products.map((item: IProduct, i: number) => {
-        return <ProductCard key={i} name={item.name} description={item.description} image={item.image} isFavourite={item.isFavourite} price={item.price} section={item.section} />
+        return <ProductCard key={i} product={item} />
       })}
 
     </Container>
