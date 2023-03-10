@@ -1,100 +1,802 @@
-[{"name":"Méng","description":"eu magna vulputate luctus cum sociis natoque penatibus et magnis","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":true,"price":10716,"section":"living_room"},
-{"name":"Séréna","description":"id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit","image":"http://dummyimage.com/250x250.png/ff4444/ffffff","isFavourite":false,"price":23518,"section":"kitchen"},
-{"name":"Naéva","description":"elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":true,"price":40466,"section":"dining_room"},
-{"name":"Loïs","description":"id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":false,"price":16910,"section":"living_room"},
-{"name":"Gwenaëlle","description":"vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":false,"price":48978,"section":"living_room"},
-{"name":"Cécile","description":"bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":false,"price":25969,"section":"living_room"},
-{"name":"Véronique","description":"sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":false,"price":18084,"section":"bathroom"},
-{"name":"Inès","description":"sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":true,"price":32494,"section":"bedroom"},
-{"name":"Béatrice","description":"habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":true,"price":13885,"section":"bathroom"},
-{"name":"Léane","description":"lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":true,"price":6220,"section":"living_room"},
-{"name":"Célestine","description":"et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":true,"price":18330,"section":"bathroom"},
-{"name":"Frédérique","description":"id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":true,"price":25597,"section":"terrace"},
-{"name":"Salomé","description":"tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":true,"price":9775,"section":"terrace"},
-{"name":"Hélène","description":"dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":false,"price":25424,"section":"bathroom"},
-{"name":"Océanne","description":"vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":false,"price":44987,"section":"kitchen"},
-{"name":"Adélaïde","description":"elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam","image":"http://dummyimage.com/250x250.png/ff4444/ffffff","isFavourite":false,"price":29683,"section":"terrace"},
-{"name":"Stévina","description":"ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":true,"price":3654,"section":"bedroom"},
-{"name":"Adèle","description":"penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum","image":"http://dummyimage.com/250x250.png/ff4444/ffffff","isFavourite":false,"price":33587,"section":"kitchen"},
-{"name":"Méryl","description":"imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":false,"price":9193,"section":"dining_room"},
-{"name":"Lorène","description":"nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":false,"price":28981,"section":"living_room"},
-{"name":"Måns","description":"sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum","image":"http://dummyimage.com/250x250.png/ff4444/ffffff","isFavourite":false,"price":21175,"section":"bedroom"},
-{"name":"Agnès","description":"aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":false,"price":2334,"section":"terrace"},
-{"name":"Léana","description":"faucibus orci luctus et ultrices posuere cubilia curae duis faucibus","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":true,"price":24092,"section":"terrace"},
-{"name":"Dorothée","description":"dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":true,"price":5923,"section":"bedroom"},
-{"name":"Zhì","description":"in porttitor pede justo eu massa donec dapibus duis at velit eu","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":false,"price":22286,"section":"bathroom"},
-{"name":"Fèi","description":"porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":false,"price":16193,"section":"bathroom"},
-{"name":"Ophélie","description":"et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":false,"price":5150,"section":"living_room"},
-{"name":"Göran","description":"est et tempus semper est quam pharetra magna ac consequat metus","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":true,"price":14625,"section":"living_room"},
-{"name":"Östen","description":"viverra diam vitae quam suspendisse potenti nullam porttitor lacus at","image":"http://dummyimage.com/250x250.png/ff4444/ffffff","isFavourite":true,"price":45761,"section":"kitchen"},
-{"name":"Naëlle","description":"arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in","image":"http://dummyimage.com/250x250.png/ff4444/ffffff","isFavourite":true,"price":42879,"section":"kitchen"},
-{"name":"Yóu","description":"integer aliquet massa id lobortis convallis tortor risus dapibus augue","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":false,"price":12006,"section":"kitchen"},
-{"name":"Uò","description":"condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":true,"price":8753,"section":"kitchen"},
-{"name":"Yáo","description":"orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":true,"price":18454,"section":"bedroom"},
-{"name":"Nuó","description":"habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":false,"price":23886,"section":"kitchen"},
-{"name":"Solène","description":"pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":false,"price":15632,"section":"bedroom"},
-{"name":"Ruì","description":"quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":true,"price":11667,"section":"kitchen"},
-{"name":"Wá","description":"tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":false,"price":33758,"section":"bedroom"},
-{"name":"Geneviève","description":"augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":true,"price":2876,"section":"terrace"},
-{"name":"Rachèle","description":"vestibulum sed magna at nunc commodo placerat praesent blandit nam","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":false,"price":23323,"section":"dining_room"},
-{"name":"Rachèle","description":"platea dictumst maecenas ut massa quis augue luctus tincidunt nulla","image":"http://dummyimage.com/250x250.png/ff4444/ffffff","isFavourite":false,"price":36062,"section":"bathroom"},
-{"name":"Cinéma","description":"feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":true,"price":21721,"section":"dining_room"},
-{"name":"Åsa","description":"non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":false,"price":26215,"section":"terrace"},
-{"name":"Bénédicte","description":"venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":true,"price":20098,"section":"bedroom"},
-{"name":"Mélinda","description":"nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":false,"price":12457,"section":"bathroom"},
-{"name":"Alizée","description":"consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":true,"price":22685,"section":"kitchen"},
-{"name":"Mélissandre","description":"ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":false,"price":39049,"section":"bathroom"},
-{"name":"Clémentine","description":"risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":true,"price":16617,"section":"kitchen"},
-{"name":"Intéressant","description":"in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo","image":"http://dummyimage.com/250x250.png/ff4444/ffffff","isFavourite":false,"price":14555,"section":"dining_room"},
-{"name":"Lucrèce","description":"sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum","image":"http://dummyimage.com/250x250.png/ff4444/ffffff","isFavourite":true,"price":4835,"section":"bedroom"},
-{"name":"Marie-ève","description":"augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":false,"price":32562,"section":"terrace"},
-{"name":"Mélissandre","description":"molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":true,"price":28310,"section":"bathroom"},
-{"name":"Anaël","description":"metus aenean fermentum donec ut mauris eget massa tempor convallis","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":true,"price":45809,"section":"bathroom"},
-{"name":"Nuó","description":"sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":false,"price":3551,"section":"living_room"},
-{"name":"Naëlle","description":"habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":false,"price":44586,"section":"terrace"},
-{"name":"Maïwenn","description":"integer pede justo lacinia eget tincidunt eget tempus vel pede","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":false,"price":4239,"section":"dining_room"},
-{"name":"Börje","description":"praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit","image":"http://dummyimage.com/250x250.png/ff4444/ffffff","isFavourite":false,"price":11236,"section":"kitchen"},
-{"name":"Clémentine","description":"libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":false,"price":6075,"section":"terrace"},
-{"name":"Yè","description":"dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":true,"price":31913,"section":"bathroom"},
-{"name":"Maïwenn","description":"rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":false,"price":44469,"section":"kitchen"},
-{"name":"Maïté","description":"aenean auctor gravida sem praesent id massa id nisl venenatis","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":false,"price":18223,"section":"living_room"},
-{"name":"Personnalisée","description":"id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":true,"price":40005,"section":"living_room"},
-{"name":"Göran","description":"rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis","image":"http://dummyimage.com/250x250.png/ff4444/ffffff","isFavourite":false,"price":6742,"section":"bedroom"},
-{"name":"Desirée","description":"nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":true,"price":49500,"section":"kitchen"},
-{"name":"Mélanie","description":"pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":true,"price":45040,"section":"bedroom"},
-{"name":"Rachèle","description":"duis aliquam convallis nunc proin at turpis a pede posuere nonummy","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":true,"price":42040,"section":"kitchen"},
-{"name":"Magdalène","description":"sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":false,"price":11231,"section":"dining_room"},
-{"name":"Irène","description":"proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":true,"price":16850,"section":"dining_room"},
-{"name":"Yú","description":"lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":false,"price":41961,"section":"kitchen"},
-{"name":"Garçon","description":"integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":false,"price":47970,"section":"bedroom"},
-{"name":"Uò","description":"tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":true,"price":49198,"section":"living_room"},
-{"name":"Zhì","description":"nisi venenatis tristique fusce congue diam id ornare imperdiet sapien","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":true,"price":40581,"section":"bedroom"},
-{"name":"Léandre","description":"elit ac nulla sed vel enim sit amet nunc viverra","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":true,"price":14675,"section":"kitchen"},
-{"name":"Méryl","description":"sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":true,"price":21886,"section":"kitchen"},
-{"name":"Adélie","description":"etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat","image":"http://dummyimage.com/250x250.png/ff4444/ffffff","isFavourite":false,"price":12163,"section":"bathroom"},
-{"name":"Kévina","description":"vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":false,"price":18870,"section":"kitchen"},
-{"name":"Agnès","description":"nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":true,"price":9721,"section":"bedroom"},
-{"name":"Danièle","description":"nec sem duis aliquam convallis nunc proin at turpis a pede posuere","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":true,"price":27061,"section":"bedroom"},
-{"name":"Anaïs","description":"adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":true,"price":18377,"section":"dining_room"},
-{"name":"Maïly","description":"eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla","image":"http://dummyimage.com/250x250.png/ff4444/ffffff","isFavourite":true,"price":25176,"section":"terrace"},
-{"name":"Aurélie","description":"pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":false,"price":21528,"section":"living_room"},
-{"name":"Uò","description":"leo odio condimentum id luctus nec molestie sed justo pellentesque","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":true,"price":24385,"section":"dining_room"},
-{"name":"Michèle","description":"turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":false,"price":40914,"section":"dining_room"},
-{"name":"Gérald","description":"aliquam sit amet diam in magna bibendum imperdiet nullam orci","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":true,"price":41372,"section":"bedroom"},
-{"name":"Dorothée","description":"rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":false,"price":44697,"section":"living_room"},
-{"name":"Åslög","description":"justo morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo","image":"http://dummyimage.com/250x250.png/dddddd/000000","isFavourite":false,"price":47004,"section":"bathroom"},
-{"name":"Réjane","description":"pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus","image":"http://dummyimage.com/250x250.png/ff4444/ffffff","isFavourite":false,"price":46712,"section":"kitchen"},
-{"name":"Cécilia","description":"cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":true,"price":34129,"section":"bathroom"},
-{"name":"Clélia","description":"volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":true,"price":14593,"section":"terrace"},
-{"name":"Märta","description":"mi sit amet lobortis sapien sapien non mi integer ac neque duis","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":false,"price":6985,"section":"dining_room"},
-{"name":"Joséphine","description":"primis in faucibus orci luctus et ultrices posuere cubilia curae nulla","image":"http://dummyimage.com/250x250.png/ff4444/ffffff","isFavourite":false,"price":17632,"section":"bedroom"},
-{"name":"Håkan","description":"in felis donec semper sapien a libero nam dui proin leo odio porttitor id","image":"http://dummyimage.com/250x250.png/ff4444/ffffff","isFavourite":true,"price":16224,"section":"kitchen"},
-{"name":"Réjane","description":"convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum","image":"http://dummyimage.com/250x250.png/ff4444/ffffff","isFavourite":true,"price":31592,"section":"bathroom"},
-{"name":"Gisèle","description":"ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":true,"price":16584,"section":"bedroom"},
-{"name":"Irène","description":"praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis","image":"http://dummyimage.com/250x250.png/ff4444/ffffff","isFavourite":false,"price":49594,"section":"bedroom"},
-{"name":"Céline","description":"sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien","image":"http://dummyimage.com/250x250.png/ff4444/ffffff","isFavourite":false,"price":8261,"section":"living_room"},
-{"name":"Lucrèce","description":"nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":true,"price":19251,"section":"bathroom"},
-{"name":"Tú","description":"in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":false,"price":42866,"section":"living_room"},
-{"name":"Bérengère","description":"pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac","image":"http://dummyimage.com/250x250.png/cc0000/ffffff","isFavourite":false,"price":1488,"section":"dining_room"},
-{"name":"Fèi","description":"orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu","image":"http://dummyimage.com/250x250.png/ff4444/ffffff","isFavourite":true,"price":24544,"section":"living_room"},
-{"name":"Méghane","description":"magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id","image":"http://dummyimage.com/250x250.png/5fa2dd/ffffff","isFavourite":true,"price":40939,"section":"bedroom"}]
+[
+  {
+    "name": "Méng",
+    "description": "eu magna vulputate luctus cum sociis natoque penatibus et magnis",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": true,
+    "price": 10716,
+    "section": "livingroom"
+  },
+  {
+    "name": "Séréna",
+    "description": "id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "isFavourite": false,
+    "price": 23518,
+    "section": "kitchen"
+  },
+  {
+    "name": "Naéva",
+    "description": "elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": true,
+    "price": 40466,
+    "section": "diningroom"
+  },
+  {
+    "name": "Loïs",
+    "description": "id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": false,
+    "price": 16910,
+    "section": "livingroom"
+  },
+  {
+    "name": "Gwenaëlle",
+    "description": "vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": false,
+    "price": 48978,
+    "section": "livingroom"
+  },
+  {
+    "name": "Cécile",
+    "description": "bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": false,
+    "price": 25969,
+    "section": "livingroom"
+  },
+  {
+    "name": "Véronique",
+    "description": "sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": false,
+    "price": 18084,
+    "section": "bathroom"
+  },
+  {
+    "name": "Inès",
+    "description": "sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": true,
+    "price": 32494,
+    "section": "bedroom"
+  },
+  {
+    "name": "Béatrice",
+    "description": "habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": true,
+    "price": 13885,
+    "section": "bathroom"
+  },
+  {
+    "name": "Léane",
+    "description": "lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": true,
+    "price": 6220,
+    "section": "livingroom"
+  },
+  {
+    "name": "Célestine",
+    "description": "et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": true,
+    "price": 18330,
+    "section": "bathroom"
+  },
+  {
+    "name": "Frédérique",
+    "description": "id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": true,
+    "price": 25597,
+    "section": "terrace"
+  },
+  {
+    "name": "Salomé",
+    "description": "tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": true,
+    "price": 9775,
+    "section": "terrace"
+  },
+  {
+    "name": "Hélène",
+    "description": "dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": false,
+    "price": 25424,
+    "section": "bathroom"
+  },
+  {
+    "name": "Océanne",
+    "description": "vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": false,
+    "price": 44987,
+    "section": "kitchen"
+  },
+  {
+    "name": "Adélaïde",
+    "description": "elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "isFavourite": false,
+    "price": 29683,
+    "section": "terrace"
+  },
+  {
+    "name": "Stévina",
+    "description": "ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": true,
+    "price": 3654,
+    "section": "bedroom"
+  },
+  {
+    "name": "Adèle",
+    "description": "penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "isFavourite": false,
+    "price": 33587,
+    "section": "kitchen"
+  },
+  {
+    "name": "Méryl",
+    "description": "imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": false,
+    "price": 9193,
+    "section": "diningroom"
+  },
+  {
+    "name": "Lorène",
+    "description": "nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": false,
+    "price": 28981,
+    "section": "livingroom"
+  },
+  {
+    "name": "Måns",
+    "description": "sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "isFavourite": false,
+    "price": 21175,
+    "section": "bedroom"
+  },
+  {
+    "name": "Agnès",
+    "description": "aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": false,
+    "price": 2334,
+    "section": "terrace"
+  },
+  {
+    "name": "Léana",
+    "description": "faucibus orci luctus et ultrices posuere cubilia curae duis faucibus",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": true,
+    "price": 24092,
+    "section": "terrace"
+  },
+  {
+    "name": "Dorothée",
+    "description": "dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": true,
+    "price": 5923,
+    "section": "bedroom"
+  },
+  {
+    "name": "Zhì",
+    "description": "in porttitor pede justo eu massa donec dapibus duis at velit eu",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": false,
+    "price": 22286,
+    "section": "bathroom"
+  },
+  {
+    "name": "Fèi",
+    "description": "porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": false,
+    "price": 16193,
+    "section": "bathroom"
+  },
+  {
+    "name": "Ophélie",
+    "description": "et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": false,
+    "price": 5150,
+    "section": "livingroom"
+  },
+  {
+    "name": "Göran",
+    "description": "est et tempus semper est quam pharetra magna ac consequat metus",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": true,
+    "price": 14625,
+    "section": "livingroom"
+  },
+  {
+    "name": "Östen",
+    "description": "viverra diam vitae quam suspendisse potenti nullam porttitor lacus at",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "isFavourite": true,
+    "price": 45761,
+    "section": "kitchen"
+  },
+  {
+    "name": "Naëlle",
+    "description": "arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "isFavourite": true,
+    "price": 42879,
+    "section": "kitchen"
+  },
+  {
+    "name": "Yóu",
+    "description": "integer aliquet massa id lobortis convallis tortor risus dapibus augue",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": false,
+    "price": 12006,
+    "section": "kitchen"
+  },
+  {
+    "name": "Uò",
+    "description": "condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": true,
+    "price": 8753,
+    "section": "kitchen"
+  },
+  {
+    "name": "Yáo",
+    "description": "orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": true,
+    "price": 18454,
+    "section": "bedroom"
+  },
+  {
+    "name": "Nuó",
+    "description": "habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": false,
+    "price": 23886,
+    "section": "kitchen"
+  },
+  {
+    "name": "Solène",
+    "description": "pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": false,
+    "price": 15632,
+    "section": "bedroom"
+  },
+  {
+    "name": "Ruì",
+    "description": "quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": true,
+    "price": 11667,
+    "section": "kitchen"
+  },
+  {
+    "name": "Wá",
+    "description": "tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": false,
+    "price": 33758,
+    "section": "bedroom"
+  },
+  {
+    "name": "Geneviève",
+    "description": "augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": true,
+    "price": 2876,
+    "section": "terrace"
+  },
+  {
+    "name": "Rachèle",
+    "description": "vestibulum sed magna at nunc commodo placerat praesent blandit nam",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": false,
+    "price": 23323,
+    "section": "diningroom"
+  },
+  {
+    "name": "Rachèle",
+    "description": "platea dictumst maecenas ut massa quis augue luctus tincidunt nulla",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "isFavourite": false,
+    "price": 36062,
+    "section": "bathroom"
+  },
+  {
+    "name": "Cinéma",
+    "description": "feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": true,
+    "price": 21721,
+    "section": "diningroom"
+  },
+  {
+    "name": "Åsa",
+    "description": "non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": false,
+    "price": 26215,
+    "section": "terrace"
+  },
+  {
+    "name": "Bénédicte",
+    "description": "venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": true,
+    "price": 20098,
+    "section": "bedroom"
+  },
+  {
+    "name": "Mélinda",
+    "description": "nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": false,
+    "price": 12457,
+    "section": "bathroom"
+  },
+  {
+    "name": "Alizée",
+    "description": "consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": true,
+    "price": 22685,
+    "section": "kitchen"
+  },
+  {
+    "name": "Mélissandre",
+    "description": "ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": false,
+    "price": 39049,
+    "section": "bathroom"
+  },
+  {
+    "name": "Clémentine",
+    "description": "risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": true,
+    "price": 16617,
+    "section": "kitchen"
+  },
+  {
+    "name": "Intéressant",
+    "description": "in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "isFavourite": false,
+    "price": 14555,
+    "section": "diningroom"
+  },
+  {
+    "name": "Lucrèce",
+    "description": "sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "isFavourite": true,
+    "price": 4835,
+    "section": "bedroom"
+  },
+  {
+    "name": "Marie-ève",
+    "description": "augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": false,
+    "price": 32562,
+    "section": "terrace"
+  },
+  {
+    "name": "Mélissandre",
+    "description": "molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": true,
+    "price": 28310,
+    "section": "bathroom"
+  },
+  {
+    "name": "Anaël",
+    "description": "metus aenean fermentum donec ut mauris eget massa tempor convallis",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": true,
+    "price": 45809,
+    "section": "bathroom"
+  },
+  {
+    "name": "Nuó",
+    "description": "sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": false,
+    "price": 3551,
+    "section": "livingroom"
+  },
+  {
+    "name": "Naëlle",
+    "description": "habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": false,
+    "price": 44586,
+    "section": "terrace"
+  },
+  {
+    "name": "Maïwenn",
+    "description": "integer pede justo lacinia eget tincidunt eget tempus vel pede",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": false,
+    "price": 4239,
+    "section": "diningroom"
+  },
+  {
+    "name": "Börje",
+    "description": "praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "isFavourite": false,
+    "price": 11236,
+    "section": "kitchen"
+  },
+  {
+    "name": "Clémentine",
+    "description": "libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": false,
+    "price": 6075,
+    "section": "terrace"
+  },
+  {
+    "name": "Yè",
+    "description": "dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": true,
+    "price": 31913,
+    "section": "bathroom"
+  },
+  {
+    "name": "Maïwenn",
+    "description": "rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": false,
+    "price": 44469,
+    "section": "kitchen"
+  },
+  {
+    "name": "Maïté",
+    "description": "aenean auctor gravida sem praesent id massa id nisl venenatis",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": false,
+    "price": 18223,
+    "section": "livingroom"
+  },
+  {
+    "name": "Personnalisée",
+    "description": "id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": true,
+    "price": 40005,
+    "section": "livingroom"
+  },
+  {
+    "name": "Göran",
+    "description": "rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "isFavourite": false,
+    "price": 6742,
+    "section": "bedroom"
+  },
+  {
+    "name": "Desirée",
+    "description": "nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": true,
+    "price": 49500,
+    "section": "kitchen"
+  },
+  {
+    "name": "Mélanie",
+    "description": "pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": true,
+    "price": 45040,
+    "section": "bedroom"
+  },
+  {
+    "name": "Rachèle",
+    "description": "duis aliquam convallis nunc proin at turpis a pede posuere nonummy",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": true,
+    "price": 42040,
+    "section": "kitchen"
+  },
+  {
+    "name": "Magdalène",
+    "description": "sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": false,
+    "price": 11231,
+    "section": "diningroom"
+  },
+  {
+    "name": "Irène",
+    "description": "proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": true,
+    "price": 16850,
+    "section": "diningroom"
+  },
+  {
+    "name": "Yú",
+    "description": "lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": false,
+    "price": 41961,
+    "section": "kitchen"
+  },
+  {
+    "name": "Garçon",
+    "description": "integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": false,
+    "price": 47970,
+    "section": "bedroom"
+  },
+  {
+    "name": "Uò",
+    "description": "tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": true,
+    "price": 49198,
+    "section": "livingroom"
+  },
+  {
+    "name": "Zhì",
+    "description": "nisi venenatis tristique fusce congue diam id ornare imperdiet sapien",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": true,
+    "price": 40581,
+    "section": "bedroom"
+  },
+  {
+    "name": "Léandre",
+    "description": "elit ac nulla sed vel enim sit amet nunc viverra",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": true,
+    "price": 14675,
+    "section": "kitchen"
+  },
+  {
+    "name": "Méryl",
+    "description": "sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": true,
+    "price": 21886,
+    "section": "kitchen"
+  },
+  {
+    "name": "Adélie",
+    "description": "etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "isFavourite": false,
+    "price": 12163,
+    "section": "bathroom"
+  },
+  {
+    "name": "Kévina",
+    "description": "vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": false,
+    "price": 18870,
+    "section": "kitchen"
+  },
+  {
+    "name": "Agnès",
+    "description": "nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": true,
+    "price": 9721,
+    "section": "bedroom"
+  },
+  {
+    "name": "Danièle",
+    "description": "nec sem duis aliquam convallis nunc proin at turpis a pede posuere",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": true,
+    "price": 27061,
+    "section": "bedroom"
+  },
+  {
+    "name": "Anaïs",
+    "description": "adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": true,
+    "price": 18377,
+    "section": "diningroom"
+  },
+  {
+    "name": "Maïly",
+    "description": "eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "isFavourite": true,
+    "price": 25176,
+    "section": "terrace"
+  },
+  {
+    "name": "Aurélie",
+    "description": "pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": false,
+    "price": 21528,
+    "section": "livingroom"
+  },
+  {
+    "name": "Uò",
+    "description": "leo odio condimentum id luctus nec molestie sed justo pellentesque",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": true,
+    "price": 24385,
+    "section": "diningroom"
+  },
+  {
+    "name": "Michèle",
+    "description": "turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": false,
+    "price": 40914,
+    "section": "diningroom"
+  },
+  {
+    "name": "Gérald",
+    "description": "aliquam sit amet diam in magna bibendum imperdiet nullam orci",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": true,
+    "price": 41372,
+    "section": "bedroom"
+  },
+  {
+    "name": "Dorothée",
+    "description": "rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": false,
+    "price": 44697,
+    "section": "livingroom"
+  },
+  {
+    "name": "Åslög",
+    "description": "justo morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo",
+    "image": "http://dummyimage.com/250x250.png/dddddd/000000",
+    "isFavourite": false,
+    "price": 47004,
+    "section": "bathroom"
+  },
+  {
+    "name": "Réjane",
+    "description": "pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "isFavourite": false,
+    "price": 46712,
+    "section": "kitchen"
+  },
+  {
+    "name": "Cécilia",
+    "description": "cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": true,
+    "price": 34129,
+    "section": "bathroom"
+  },
+  {
+    "name": "Clélia",
+    "description": "volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": true,
+    "price": 14593,
+    "section": "terrace"
+  },
+  {
+    "name": "Märta",
+    "description": "mi sit amet lobortis sapien sapien non mi integer ac neque duis",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": false,
+    "price": 6985,
+    "section": "diningroom"
+  },
+  {
+    "name": "Joséphine",
+    "description": "primis in faucibus orci luctus et ultrices posuere cubilia curae nulla",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "isFavourite": false,
+    "price": 17632,
+    "section": "bedroom"
+  },
+  {
+    "name": "Håkan",
+    "description": "in felis donec semper sapien a libero nam dui proin leo odio porttitor id",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "isFavourite": true,
+    "price": 16224,
+    "section": "kitchen"
+  },
+  {
+    "name": "Réjane",
+    "description": "convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "isFavourite": true,
+    "price": 31592,
+    "section": "bathroom"
+  },
+  {
+    "name": "Gisèle",
+    "description": "ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": true,
+    "price": 16584,
+    "section": "bedroom"
+  },
+  {
+    "name": "Irène",
+    "description": "praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "isFavourite": false,
+    "price": 49594,
+    "section": "bedroom"
+  },
+  {
+    "name": "Céline",
+    "description": "sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "isFavourite": false,
+    "price": 8261,
+    "section": "livingroom"
+  },
+  {
+    "name": "Lucrèce",
+    "description": "nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": true,
+    "price": 19251,
+    "section": "bathroom"
+  },
+  {
+    "name": "Tú",
+    "description": "in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": false,
+    "price": 42866,
+    "section": "livingroom"
+  },
+  {
+    "name": "Bérengère",
+    "description": "pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac",
+    "image": "http://dummyimage.com/250x250.png/cc0000/ffffff",
+    "isFavourite": false,
+    "price": 1488,
+    "section": "diningroom"
+  },
+  {
+    "name": "Fèi",
+    "description": "orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu",
+    "image": "http://dummyimage.com/250x250.png/ff4444/ffffff",
+    "isFavourite": true,
+    "price": 24544,
+    "section": "livingroom"
+  },
+  {
+    "name": "Méghane",
+    "description": "magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id",
+    "image": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
+    "isFavourite": true,
+    "price": 40939,
+    "section": "bedroom"
+  }
+]
