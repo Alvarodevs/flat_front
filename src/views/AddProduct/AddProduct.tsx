@@ -1,15 +1,25 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import useImage from '../../hooks/useImage'
+import noPhoto from '../../assets/images/noPhoto.jpg'
 import { InputForm } from '../../components/index'
 import { Label } from '../../components/InputForm/InputFormStyle'
-import { SelectContainer, ButtonsContainer, Button } from './AddProductStyle'
-import {formDataInitialState} from '../../utils/constants'
+import {
+  ContainerImageInput,
+  Image,
+  SelectContainer,
+  ButtonsContainer,
+  Button
+} from './AddProductStyle'
+import { formDataInitialState } from '../../utils/constants'
+
 
 interface IFormData {
-  name: string,
-  description: string,
-  isFavourite: boolean,
-  price: number,
-  section: string,
+  name: string
+  description: string
+  isFavourite: boolean
+  price: number
+  section: string
+  image: string | null
 }
 
 const sectionOptions = [
@@ -22,26 +32,39 @@ const sectionOptions = [
 ]
 
 const AddProductForm: React.FC = (): JSX.Element => {
-  
-  const [formData, setFormData] = useState<IFormData>(formDataInitialState);
+  const [formData, setFormData] = useState<IFormData>(formDataInitialState)
+  const [image, handleImageUpload, clearImage] = useImage()
+
+  useEffect(() => {
+    setFormData({ ...formData, image })
+  }, [image])
+
+  console.log('FORM', formData)
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
-    event.preventDefault();
-    console.log(formData);
+    event.preventDefault()
+    console.log(formData)
   }
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>): void => {
-    const { name, value } = e.target;
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ): void => {
+    const { name, value } = e.target
     e.preventDefault()
     setFormData({
       ...formData,
-      [name]: name === "favourite" ? (e.target as HTMLInputElement).checked : value,
-    });
-  };
-
-  const clearData = (): void => {
-    setFormData(formDataInitialState)
+      [name]:
+        name === 'favourite' ? (e.target as HTMLInputElement).checked : value
+    })
   }
+
+  
+  const clearData = (e: React.MouseEvent<HTMLButtonElement>): void => {
+    setFormData(formDataInitialState)
+    clearImage()
+  }
+  console.log('FORM', formData)
+
   return (
     <form onSubmit={handleSubmit}>
       <InputForm
@@ -60,13 +83,6 @@ const AddProductForm: React.FC = (): JSX.Element => {
         maxLength={100}
         onChange={handleChange}
       />
-      {/* <InputForm
-        name="favourite"
-        type="checkbox"
-        labelText="What are you looking for?"
-        checked={formData.favourite}
-        onChange={handleChange}
-      /> */}
       <InputForm
         name="price"
         type="number"
@@ -93,9 +109,44 @@ const AddProductForm: React.FC = (): JSX.Element => {
           ))}
         </select>
       </SelectContainer>
+      <ContainerImageInput>
+        <div className="file-input">
+          <input
+            type="file"
+            name="file-input"
+            id="file-input"
+            className="file-input__input"
+            onChange={handleImageUpload}
+          />
+          <label className="file-input__label" htmlFor="file-input">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="upload"
+              className="svg-inline--fa fa-upload fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M296 384h-80c-13.3 0-24-10.7-24-24V192h-87.7c-17.8 0-26.7-21.5-14.1-34.1L242.3 5.7c7.5-7.5 19.8-7.5 27.3 0l152.2 152.2c12.6 12.6 3.7 34.1-14.1 34.1H320v168c0 13.3-10.7 24-24 24zm216-8v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h136v8c0 30.9 25.1 56 56 56h80c30.9 0 56-25.1 56-56v-8h136c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"
+              ></path>
+            </svg>
+            <span>Upload file</span>
+          </label>
+        </div>
+
+        {image && <Image src={image || noPhoto} alt="Selected Image" />}
+      </ContainerImageInput>
       <ButtonsContainer>
-      <Button type="submit" isClear={false}>Submit</Button>
-      <Button type="reset" isClear={true} onClick={clearData}>Clear</Button>
+        <Button type="submit" isClear={false}>
+          Submit
+        </Button>
+        <Button type="reset" isClear={true} onClick={clearData}>
+          Clear
+        </Button>
       </ButtonsContainer>
     </form>
   )

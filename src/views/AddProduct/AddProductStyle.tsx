@@ -4,6 +4,55 @@ interface IButton {
   isClear: boolean
 }
 
+export const ContainerImageInput = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .file-input__input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    
+  }
+
+  .file-input__label {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--black);
+    font-size: 14px;
+    padding: 10px 12px;
+    background-color: var(--lightBlue);
+    font-family: var(--main-font);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+    margin: 1.2rem 0;
+    :hover{
+      transition: 0.3s ease-in-out;
+      background-color: var(--blue);
+      color: var(--white);
+    }
+  }
+
+  .file-input__label svg {
+    height: 16px;
+    margin-right: 4px;
+  }
+`;
+export const InputImage = styled.input`
+  margin-bottom: 1rem;
+`;
+export const Image = styled.img`
+  max-width: 15rem;
+`;
+
 export const SelectContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,6 +65,7 @@ export const SelectContainer = styled.div`
     font-family: var(--main-font);
     border: 1px solid var(--lightBlue);
     border-radius: 5px;
+    margin-bottom: 1rem;
   }
 `
 

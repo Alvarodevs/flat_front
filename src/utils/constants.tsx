@@ -3,7 +3,8 @@ export const formDataInitialState = {
   description: '',
   isFavourite: false,
   price: 0,
-  section: ''
+  section: '',
+  image: ''
 }
 
 export const ITEMS_PER_PAGE = 6
