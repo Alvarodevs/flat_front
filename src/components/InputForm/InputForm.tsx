@@ -11,10 +11,6 @@ interface Props {
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void
 }
 
-// interface ILocation {
-//   pathname: string
-// }
-
 const InputForm = ({
   name,
   type,

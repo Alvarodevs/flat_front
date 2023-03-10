@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 interface IAddProductPage {
-  isAddSite: boolean
+  isAddSite?: boolean
 }
 
 export const Container = styled.div`

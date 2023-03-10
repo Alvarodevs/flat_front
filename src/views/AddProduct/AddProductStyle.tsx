@@ -1,5 +1,12 @@
 import styled from 'styled-components'
 
-export const Div = styled.div`
-  // background-color: green;
+export const SelectContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  select{
+    max-width: 8rem;
+    overflow: scroll;
+  }
 `
