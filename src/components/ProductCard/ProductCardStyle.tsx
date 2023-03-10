@@ -20,7 +20,6 @@ export const ImgContainer = styled.div`
   img{
     max-width: inherit;
     object-fit: cover;
-
   }
 `
 
