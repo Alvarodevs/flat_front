@@ -5,6 +5,8 @@ interface Props {
   name: string
   type: string
   maxLength?: number
+  min?: number
+  max?: number
   labelText: string
   value?: string | number
   checked?: boolean
@@ -15,6 +17,8 @@ const InputForm = ({
   name,
   type,
   maxLength,
+  min,
+  max,
   labelText,
   onChange
 }: Props): JSX.Element => {
@@ -27,9 +31,12 @@ const InputForm = ({
         {labelText}
       </Label>
       <Input
+        isAddSite={isAddPage}
         type={type}
         name={name}
         maxLength={maxLength}
+        min={min}
+        max={max}
         onChange={onChange}
       ></Input>
     </Container>

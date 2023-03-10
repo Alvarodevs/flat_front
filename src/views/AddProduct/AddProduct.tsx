@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import { InputForm } from '../../components/index'
 import { Label } from '../../components/InputForm/InputFormStyle'
-import { SelectContainer } from './AddProductStyle'
+import { SelectContainer, ButtonsContainer, Button } from './AddProductStyle'
+import {formDataInitialState} from '../../utils/constants'
 
 interface IFormData {
   name: string,
   description: string,
-  favourite: boolean,
+  isFavourite: boolean,
   price: number,
-  section: string
+  section: string,
 }
 
 const sectionOptions = [
@@ -22,13 +23,7 @@ const sectionOptions = [
 
 const AddProductForm: React.FC = (): JSX.Element => {
   
-  const [formData, setFormData] = useState<IFormData>({
-    name: "",
-    description: "",
-    favourite: false,
-    price: 0,
-    section: "",
-  });
+  const [formData, setFormData] = useState<IFormData>(formDataInitialState);
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
@@ -44,6 +39,9 @@ const AddProductForm: React.FC = (): JSX.Element => {
     });
   };
 
+  const clearData = (): void => {
+    setFormData(formDataInitialState)
+  }
   return (
     <form onSubmit={handleSubmit}>
       <InputForm
@@ -51,6 +49,7 @@ const AddProductForm: React.FC = (): JSX.Element => {
         type="text"
         labelText="Product name"
         value={formData.name}
+        maxLength={30}
         onChange={handleChange}
       />
       <InputForm
@@ -58,6 +57,7 @@ const AddProductForm: React.FC = (): JSX.Element => {
         type="text"
         labelText="Description"
         value={formData.description}
+        maxLength={100}
         onChange={handleChange}
       />
       {/* <InputForm
@@ -72,6 +72,8 @@ const AddProductForm: React.FC = (): JSX.Element => {
         type="number"
         labelText="Price in €"
         value={formData.price}
+        min={10}
+        max={50000}
         onChange={handleChange}
       />
       <SelectContainer>
@@ -91,7 +93,10 @@ const AddProductForm: React.FC = (): JSX.Element => {
           ))}
         </select>
       </SelectContainer>
-      <button type="submit">Submit</button>
+      <ButtonsContainer>
+      <Button type="submit" isClear={false}>Submit</Button>
+      <Button type="reset" isClear={true} onClick={clearData}>Clear</Button>
+      </ButtonsContainer>
     </form>
   )
 }
