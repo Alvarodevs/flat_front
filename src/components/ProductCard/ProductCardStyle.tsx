@@ -19,6 +19,8 @@ export const ImgContainer = styled.div`
   max-width: 200px;
   img{
     max-width: inherit;
+    object-fit: cover;
+
   }
 `
 
@@ -46,6 +48,8 @@ export const InfoContainer = styled.div`
   position: relative;
   height: 17rem;
   padding-top: 0.5rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
 `
 
 export const Name = styled.h3`
