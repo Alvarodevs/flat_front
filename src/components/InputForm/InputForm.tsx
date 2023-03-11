@@ -4,6 +4,7 @@ import { Container, Label, Input } from './InputFormStyle'
 interface Props {
   name: string
   type: string
+  minLength?: number 
   maxLength?: number
   min?: number
   max?: number

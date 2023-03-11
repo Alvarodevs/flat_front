@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import useImage from '../../hooks/useImage'
 import noPhoto from '../../assets/images/noPhoto.jpg'
+import { toast } from 'react-toastify';
 import { InputForm } from '../../components/index'
 import { Label } from '../../components/InputForm/InputFormStyle'
 import {
@@ -39,13 +40,33 @@ const AddProductForm: React.FC = (): JSX.Element => {
     setFormData({ ...formData, image })
   }, [image])
 
-  console.log('FORM', formData)
+  
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault()
-    console.log(formData)
+    validationForm(formData)
   }
 
+  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+  const validationForm = (form:any) => {
+    for (const key in form) {
+      if (form[key] === '') {
+        toast.error(`Review ${key} field`, {
+          position: "top-center",
+          autoClose: 3500,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
+        return false;
+      }
+    }
+    return true;
+  }
+  
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ): void => {
@@ -53,8 +74,7 @@ const AddProductForm: React.FC = (): JSX.Element => {
     e.preventDefault()
     setFormData({
       ...formData,
-      [name]:
-        name === 'favourite' ? (e.target as HTMLInputElement).checked : value
+      [name]: value
     })
   }
 
@@ -63,16 +83,18 @@ const AddProductForm: React.FC = (): JSX.Element => {
     setFormData(formDataInitialState)
     clearImage()
   }
-  console.log('FORM', formData)
+  
 
   return (
     <form onSubmit={handleSubmit}>
+      
       <InputForm
         name="name"
         type="text"
         labelText="Product name"
         value={formData.name}
-        maxLength={30}
+        minLength={3}
+        maxLength={20}
         onChange={handleChange}
       />
       <InputForm
@@ -80,6 +102,7 @@ const AddProductForm: React.FC = (): JSX.Element => {
         type="text"
         labelText="Description"
         value={formData.description}
+        minLength={3}
         maxLength={100}
         onChange={handleChange}
       />
@@ -148,7 +171,9 @@ const AddProductForm: React.FC = (): JSX.Element => {
           Clear
         </Button>
       </ButtonsContainer>
+      
     </form>
+    
   )
 }
 

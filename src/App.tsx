@@ -6,12 +6,16 @@ import AddProduct from './views/AddProduct'
 import Home from './views/Home'
 // Global style
 import GlobalStyle from './styles/global'
+import 'react-toastify/dist/ReactToastify.css';
 // Components
 import { Header } from './components'
+import { ToastContainer } from 'react-toastify';
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
+    <ToastContainer/>
+
       <GlobalStyle />
       <Header/>
       <Routes>
