@@ -28,7 +28,6 @@ export const findByQuery = async (query: string): Promise<unknown> => {
 };
 
 export const addProduct = async (product: IFormData): Promise<unknown> => {
-  // localhost:8000/api/products/  -POST
   const backURL = process.env.REACT_APP_API_URL;
   const path = 'new_product';
 
