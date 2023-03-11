@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import useImage from '../../hooks/useImage'
+import validationForm from "../../utils/validateForm";
+import { useNavigate } from "react-router-dom";
 import noPhoto from '../../assets/images/noPhoto.jpg'
-import { toast } from 'react-toastify';
 import { InputForm } from '../../components/index'
 import { Label } from '../../components/InputForm/InputFormStyle'
 import {
@@ -11,7 +12,7 @@ import {
   ButtonsContainer,
   Button
 } from './AddProductStyle'
-import { formDataInitialState } from '../../utils/constants'
+import { FORM_DATA_INIT_STATE } from '../../utils/constants'
 
 
 interface IFormData {
@@ -23,6 +24,7 @@ interface IFormData {
   image: string | null
 }
 
+
 const sectionOptions = [
   'kitchen',
   'bathroom',
@@ -33,8 +35,9 @@ const sectionOptions = [
 ]
 
 const AddProductForm: React.FC = (): JSX.Element => {
-  const [formData, setFormData] = useState<IFormData>(formDataInitialState)
+  const [formData, setFormData] = useState<IFormData>(FORM_DATA_INIT_STATE)
   const [image, handleImageUpload, clearImage] = useImage()
+  const navigate = useNavigate()
 
   useEffect(() => {
     setFormData({ ...formData, image })
@@ -44,28 +47,9 @@ const AddProductForm: React.FC = (): JSX.Element => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault()
-    validationForm(formData)
+    validationForm(formData, navigate)
   }
 
-  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-  const validationForm = (form:any) => {
-    for (const key in form) {
-      if (form[key] === '') {
-        toast.error(`Review ${key} field`, {
-          position: "top-center",
-          autoClose: 3500,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-          });
-        return false;
-      }
-    }
-    return true;
-  }
   
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -80,7 +64,7 @@ const AddProductForm: React.FC = (): JSX.Element => {
 
   
   const clearData = (e: React.MouseEvent<HTMLButtonElement>): void => {
-    setFormData(formDataInitialState)
+    setFormData(FORM_DATA_INIT_STATE)
     clearImage()
   }
   
@@ -102,9 +86,10 @@ const AddProductForm: React.FC = (): JSX.Element => {
         type="text"
         labelText="Description"
         value={formData.description}
-        minLength={3}
+        minLength={10}
         maxLength={100}
         onChange={handleChange}
+        
       />
       <InputForm
         name="price"
@@ -114,6 +99,7 @@ const AddProductForm: React.FC = (): JSX.Element => {
         min={10}
         max={50000}
         onChange={handleChange}
+        
       />
       <SelectContainer>
         <Label htmlFor="section">Choose a section: </Label>
@@ -122,7 +108,6 @@ const AddProductForm: React.FC = (): JSX.Element => {
           name="section"
           value={formData.section}
           onChange={handleChange}
-          required
         >
           <option value="">Section options</option>
           {sectionOptions.map((option) => (

@@ -1,4 +1,6 @@
-export const formDataInitialState = {
+import { type ToastPosition } from 'react-toastify';
+
+export const FORM_DATA_INIT_STATE = {
   name: '',
   description: '',
   isFavourite: false,
@@ -8,3 +10,13 @@ export const formDataInitialState = {
 }
 
 export const ITEMS_PER_PAGE = 6
+
+export const TOAST_CONFIG = {
+  position: 'top-center' as ToastPosition,
+  autoClose: 2500,
+  hideProgressBar: false,
+  closeOnClick: true,
+  pauseOnHover: true,
+  draggable: true,
+  progress: undefined
+}
