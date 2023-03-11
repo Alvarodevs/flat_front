@@ -1,4 +1,6 @@
 
+import { type NavigateFunction } from 'react-router-dom';
+// import type IFormData from '../interfaces/IFormData'
 import { toast, type ToastOptions } from 'react-toastify';
 import { TOAST_CONFIG } from '../utils/constants'
 
@@ -6,7 +8,7 @@ const toastConfig: ToastOptions = TOAST_CONFIG
 
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-const validationForm = (form:any, navigate: any) => {
+const validationForm = (form: any, navigate: NavigateFunction) => {
   for (const key in form) {
     if (form[key] === '') {
       if (key === 'section'){

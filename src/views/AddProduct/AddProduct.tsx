@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import useImage from '../../hooks/useImage'
-import validationForm from "../../utils/validateForm";
-import { useNavigate } from "react-router-dom";
+import validationForm from "../../utils/validateForm"
+import type IFormData from '../../interfaces/IFormData'
+import { useNavigate } from "react-router-dom"
 import noPhoto from '../../assets/images/noPhoto.jpg'
 import { InputForm } from '../../components/index'
 import { Label } from '../../components/InputForm/InputFormStyle'
@@ -13,17 +14,6 @@ import {
   Button
 } from './AddProductStyle'
 import { FORM_DATA_INIT_STATE } from '../../utils/constants'
-
-
-interface IFormData {
-  name: string
-  description: string
-  isFavourite: boolean
-  price: number
-  section: string
-  image: string | null
-}
-
 
 const sectionOptions = [
   'kitchen',
