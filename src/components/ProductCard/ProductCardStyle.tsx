@@ -16,17 +16,18 @@ export const Card = styled.div`
 `
 
 export const ImgContainer = styled.div`
-  max-width: 200px;
+  max-width: 180px;
   img{
-    max-width: inherit;
+    width: 100%;
     object-fit: cover;
+    height: 80%;
   }
 `
 
 export const FavIcon = styled.div`
   position: absolute;
   top:0.5rem;
-  left: 9.5rem;
+  left: 0.5rem;
   width: fit-content;
   padding: 0.2rem;
   background-color: var(--white);
@@ -47,8 +48,6 @@ export const InfoContainer = styled.div`
   position: relative;
   height: 17rem;
   padding-top: 0.5rem;
-  overflow-y: scroll;
-  overflow-x: hidden;
 `
 
 export const Name = styled.h3`

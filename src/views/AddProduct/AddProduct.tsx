@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react'
 import useImage from '../../hooks/useImage'
+// Redux
+import { useAppDispatch } from "../../app/hooks";
+import { addNewProduct } from '../../features/products/productsSlice';
+
 import validationForm from "../../utils/validateForm"
 import type IFormData from '../../interfaces/IFormData'
 import { useNavigate } from "react-router-dom"
@@ -27,6 +31,8 @@ const sectionOptions = [
 const AddProductForm: React.FC = (): JSX.Element => {
   const [formData, setFormData] = useState<IFormData>(FORM_DATA_INIT_STATE)
   const [image, handleImageUpload, clearImage] = useImage()
+  const dispatch = useAppDispatch();
+  // const products = useAppSelector(selectProducts)
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -37,7 +43,11 @@ const AddProductForm: React.FC = (): JSX.Element => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault()
-    validationForm(formData, navigate)
+    if (validationForm(formData)){
+      // eslint-disable-next-line @typescript-eslint/no-floating-promises
+      dispatch(addNewProduct(formData))
+    }
+    navigate('/')
   }
 
   

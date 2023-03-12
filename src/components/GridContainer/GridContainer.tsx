@@ -2,13 +2,15 @@ import {useState, useEffect} from 'react'
 // Redux
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import { selectProducts, getProducts } from '../../features/products/productsSlice';
-import ReactPaginate from 'react-paginate';
+
+// Style 
 import { Container, PaginationContainer } from "./GridContainerStyle"
+
+import ReactPaginate from 'react-paginate';
 import type IProduct from "../../interfaces/IProduct"
-// import mock_products from '../../db/mock_products.json'
 import { ITEMS_PER_PAGE } from "../../utils/constants"
 // Components
-import {ProductCard} from "../index"
+import { ProductCard } from "../index"
 
 const GridContainer: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<number | null>(0);
@@ -35,8 +37,8 @@ const GridContainer: React.FC = () => {
   return (
     <>
     <Container>
-      {currentPageData?.map((item: IProduct, i: number) => {
-        return <ProductCard key={i} product={item} />
+      {currentPageData?.map((item: IProduct) => {
+        return <ProductCard key={item._id} product={item} />
       })}
       
     </Container>

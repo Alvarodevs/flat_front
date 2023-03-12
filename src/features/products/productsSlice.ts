@@ -30,6 +30,7 @@ export const getProductByQuery = createAsyncThunk(
 export const addNewProduct = createAsyncThunk(
   'post/addProduct',
   async (product: IFormData) => {
+    console.log(product)
     const response = await addProduct(product)
     return response
   }
@@ -39,6 +40,7 @@ export const addNewProduct = createAsyncThunk(
 const initialState: ProductsState = {
   items: [],
   single: {
+    _id: '',
     name: '',
     description: '',
     image: '',
@@ -92,7 +94,6 @@ export const productsSlice = createSlice({
       .addCase(
         addNewProduct.fulfilled,
         (state: ProductsState, action: IActionThunk) => {
-          state.single = action.payload
           state.status = 'ok'
         }
       )

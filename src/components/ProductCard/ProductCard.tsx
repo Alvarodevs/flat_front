@@ -1,4 +1,4 @@
-import { type IProduct } from '../../interfaces/IProduct'
+import type IProduct from '../../interfaces/IProduct'
 import { Card, ImgContainer, FavIcon, Name, Description, InfoContainer, Price } from './ProductCardStyle'
 import {AiFillHeart, AiOutlineHeart} from 'react-icons/ai'
 
@@ -19,7 +19,7 @@ const ProductCard: React.FC<IItem> = ({product} :IItem ): JSX.Element => {
         <Description>{product.description}</Description>
         
       </InfoContainer>
-      <Price>{product.price / 100}€</Price>
+      <Price>{product.price}€</Price>
     </Card>
   )
 }
