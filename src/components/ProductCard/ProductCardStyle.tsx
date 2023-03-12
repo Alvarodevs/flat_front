@@ -6,11 +6,12 @@ interface IProps {
 
 export const Card = styled.div<IProps>`
   width: ${({length}) => length === 1 ? '45%' : '100%'};
-  height: ${({length}) => length === 1 ? '75%' : 'auto'};
+  height: auto;
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  min-height: 18rem;
+  // min-height: 18rem;
   padding: 0 0 0.5rem 0;
   transition: 0.3s ease-in-out;
   border-radius: 2rem;
@@ -29,7 +30,7 @@ export const ImgContainer = styled.div`
   img{
     width: 100%;
     object-fit: cover;
-    height: 85%;
+    height: 20rem;
     border-radius: 2rem 0 2rem 0;
   }
 `
@@ -56,14 +57,12 @@ export const FavIcon = styled.div`
 
 export const InfoContainer = styled.div`
   position: relative;
-  height: 17rem;
   padding-top: 0.5rem;
 `
 
 export const Name = styled.h3`
   color: var(--blue);
   text-align: center;
-  padding: 0.5rem 0;
   font-family: var(--secondary-font);
   font-weight: 300;
 `
@@ -76,8 +75,7 @@ export const Description = styled.p`
 `
 
 export const Price = styled.p`
-  position: absolute;
-  bottom: 0.5rem;
+  margin: 0.3rem auto;
   color: var(--grey);
   font-size: var(--font-size-xl);
   font-family: var(--main-font);

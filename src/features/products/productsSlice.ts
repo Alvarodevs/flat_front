@@ -9,6 +9,7 @@ import type { RootState } from '../../app/store'
 
 // Define a type for the slice state
 interface ProductsState {
+  products: any
   items: IProduct[]
   single: IProduct
   status: string
@@ -30,7 +31,6 @@ export const getProductByQuery = createAsyncThunk(
 export const addNewProduct = createAsyncThunk(
   'post/addProduct',
   async (product: any) => {
-    console.log('SLICE',product)
     const response = await addProduct(product)
     return response
   }
@@ -48,7 +48,8 @@ const initialState: ProductsState = {
     price: 0,
     section: ''
   },
-  status: 'idle'
+  status: 'idle',
+  products: undefined
 }
 
 export const productsSlice = createSlice({

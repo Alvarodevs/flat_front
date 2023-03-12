@@ -16,10 +16,13 @@ export const InputContainer = styled.form`
 
 export const AddContainer = styled.div`
   align-self: center;
-  svg {
+  color: var(--lightGrey);
+  #add_icon {
     margin: 0.5rem 0;
     font-size: var(--font-size-xl);
-    color: var(--lightBlue);
+    path{
+      stroke: var(--lightGrey);
+    }
   }
   a {
     text-decoration: none;
@@ -28,11 +31,13 @@ export const AddContainer = styled.div`
   :hover {
     transition: 0.2s ease-in-out;
     a {
-      color: var(--lightBlue);
+      color: var(--blue);
+      
     }
     #add_icon {
-      background-color: var(--lightBlue);
-      border-radius: 10px;
+      path{
+        stroke: var(--blue);
+      }
     }
   }
 `
@@ -40,7 +45,6 @@ export const AddContainer = styled.div`
 export const AddTitle = styled.h6`
   font-size: var(--font-size-l);
   font-family: var(--main-font);
-
   @media screen and (max-width: 620px) {
     font-size: var(--font-size-m);
     span {

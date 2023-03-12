@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-  padding: 1rem 1.5rem;
+  padding: 1rem 0.6rem;
 `
 
 export const PaginationContainer = styled.div`

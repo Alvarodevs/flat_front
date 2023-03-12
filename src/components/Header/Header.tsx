@@ -1,4 +1,4 @@
-import { Container, Logo, IconsContainer } from "./HeaderStyle"
+import { Container, Logo, IconsContainer, Title } from "./HeaderStyle"
 import logo from "../../assets/images/flat101.png"
 import {Link} from 'react-router-dom'
 import {AiOutlineUser} from 'react-icons/ai'
@@ -12,6 +12,9 @@ const Header: React.FC = (): JSX.Element => {
       <Link to='/'>
         <Logo src={logo} alt="logo"/>
       </Link>
+      <Title>
+        Products test
+      </Title>
       <IconsContainer>
         <AiOutlineUser/>
         <RxMagnifyingGlass/>

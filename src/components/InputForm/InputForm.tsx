@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom'
 import { Container, Label, Input } from './InputFormStyle'
 
-interface Props {
+export interface Props {
   name: string
   type: string
   minLength?: number 

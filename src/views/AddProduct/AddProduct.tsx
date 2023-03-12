@@ -28,7 +28,7 @@ const sectionOptions = [
   'diningroom'
 ]
 
-const AddProductForm: React.FC = (): JSX.Element => {
+const AddProduct: React.FC = (): JSX.Element => {
   const [formData, setFormData] = useState<IFormData>(FORM_DATA_INIT_STATE)
   const [image, file, handleImageUpload, clearImage] = useImage()
   const dispatch = useAppDispatch()
@@ -158,4 +158,4 @@ const AddProductForm: React.FC = (): JSX.Element => {
   )
 }
 
-export default AddProductForm
+export default AddProduct
