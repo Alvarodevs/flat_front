@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+import { createSlice, createAsyncThunk, type PayloadAction } from '@reduxjs/toolkit'
 import {
   type IActionThunk,
   type IFormData,
@@ -30,7 +30,7 @@ export const getProductByQuery = createAsyncThunk(
 export const addNewProduct = createAsyncThunk(
   'post/addProduct',
   async (product: IFormData) => {
-    console.log(product)
+    console.log('SLICE',product)
     const response = await addProduct(product)
     return response
   }
@@ -54,7 +54,21 @@ const initialState: ProductsState = {
 export const productsSlice = createSlice({
   name: 'products',
   initialState,
-  reducers: {},
+  reducers: {
+    setToFavourite: (state: ProductsState, action: PayloadAction<string>) => {
+      const _id = action.payload
+      // eslint-disable-next-line array-callback-return
+      state.items = state.items.map((product) => {
+        if (product._id === _id) {
+          return {
+            ...product,
+            isFavourite: !product.isFavourite
+          }
+        }
+        return product
+      })
+    }
+  },
   extraReducers: (builder) => {
     builder
       // GET all products
@@ -104,6 +118,7 @@ export const productsSlice = createSlice({
 })
 
 // export const { FUNCTIONS TO BE EXPORTED } = productsSlice.actions
+export const { setToFavourite } = productsSlice.actions
 
 // Other code such as selectors can use the imported `RootState` type
 export const selectProducts = (state: RootState): IProduct[] => state.products.items

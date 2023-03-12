@@ -1,28 +1,30 @@
 import { useState, type ChangeEvent } from 'react';
 
-export const useImage = (): [string, (event: ChangeEvent<HTMLInputElement>) => void, () => void] => {
+export const useImage = (): [string, File | undefined, (event: ChangeEvent<HTMLInputElement>) => void, () => void] => {
   const [image, setImage] = useState<string>('');
-
+  const [file, setFile] = useState<File | undefined>()
+  
   // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
   const handleImageUpload = (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
-    console.log('file', file)
+    
     if (file) {
-      const reader = new FileReader();
+      setFile(file)
+      const reader = new FileReader()
       reader.addEventListener('load', () => {
-        setImage(reader.result as string);
-      });
+        setImage(reader.result as string)
+      })
       reader.readAsDataURL(file);
     } else {
       setImage('')
     }
   };
-
+  
   const clearImage = (): void => {
-    setImage('');
+    setImage('')
   };
   
-  return [image, handleImageUpload, clearImage];
+  return [image, file, handleImageUpload, clearImage]
 };
 
 export default useImage

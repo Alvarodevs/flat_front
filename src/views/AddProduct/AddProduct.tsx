@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
 import useImage from '../../hooks/useImage'
 // Redux
-import { useAppDispatch } from "../../app/hooks";
-import { addNewProduct } from '../../features/products/productsSlice';
+import { useAppDispatch } from '../../app/hooks'
+import { addNewProduct } from '../../features/products/productsSlice'
 
-import validationForm from "../../utils/validateForm"
+import validationForm from '../../utils/validateForm'
 import type IFormData from '../../interfaces/IFormData'
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from 'react-router-dom'
 import noPhoto from '../../assets/images/noPhoto.jpg'
 import { InputForm } from '../../components/index'
 import { Label } from '../../components/InputForm/InputFormStyle'
@@ -30,31 +30,39 @@ const sectionOptions = [
 
 const AddProductForm: React.FC = (): JSX.Element => {
   const [formData, setFormData] = useState<IFormData>(FORM_DATA_INIT_STATE)
-  const [image, handleImageUpload, clearImage] = useImage()
-  const dispatch = useAppDispatch();
+  const [image, file, handleImageUpload, clearImage] = useImage()
+  const dispatch = useAppDispatch()
   // const products = useAppSelector(selectProducts)
   const navigate = useNavigate()
 
   useEffect(() => {
-    setFormData({ ...formData, image })
+    setFormData({ ...formData, image, imageFile: file})
   }, [image])
-
+  // console.log(formData)
+  // const form = new FormData();
+  // console.log(form)
+    // for (const input in formData) {
+    //   form.append(input, formData[input]);
+    // }
   
-
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
+  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    if (validationForm(formData)){
+    if (validationForm(formData)) {
+      // if(blobFile){
+      //   const finalFormData = {product: {...formData}, image: blobFile}
       // eslint-disable-next-line @typescript-eslint/no-floating-promises
       dispatch(addNewProduct(formData))
+      navigate('/')
     }
-    navigate('/')
+    
   }
 
-  
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ): void => {
     const { name, value } = e.target
+
     e.preventDefault()
     setFormData({
       ...formData,
@@ -62,16 +70,14 @@ const AddProductForm: React.FC = (): JSX.Element => {
     })
   }
 
-  
   const clearData = (e: React.MouseEvent<HTMLButtonElement>): void => {
     setFormData(FORM_DATA_INIT_STATE)
     clearImage()
   }
-  
 
   return (
+    // eslint-disable-next-line @typescript-eslint/no-misused-promises
     <form onSubmit={handleSubmit}>
-      
       <InputForm
         name="name"
         type="text"
@@ -89,7 +95,6 @@ const AddProductForm: React.FC = (): JSX.Element => {
         minLength={10}
         maxLength={100}
         onChange={handleChange}
-        
       />
       <InputForm
         name="price"
@@ -99,7 +104,6 @@ const AddProductForm: React.FC = (): JSX.Element => {
         min={10}
         max={50000}
         onChange={handleChange}
-        
       />
       <SelectContainer>
         <Label htmlFor="section">Choose a section: </Label>
@@ -156,9 +160,7 @@ const AddProductForm: React.FC = (): JSX.Element => {
           Clear
         </Button>
       </ButtonsContainer>
-      
     </form>
-    
   )
 }
 

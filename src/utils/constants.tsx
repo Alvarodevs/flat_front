@@ -6,7 +6,7 @@ export const FORM_DATA_INIT_STATE = {
   isFavourite: false,
   price: 0,
   section: '',
-  image: ''
+  image: '',
 }
 
 export const ITEMS_PER_PAGE = 6

@@ -1,7 +1,7 @@
 import type IProduct from '../../interfaces/IProduct'
 // Redux
-import { useAppSelector } from "../../app/hooks";
-import { selectProducts } from '../../features/products/productsSlice';
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import { selectProducts, setToFavourite } from '../../features/products/productsSlice';
 
 import { Card, ImgContainer, FavIcon, Name, Description, InfoContainer, Price } from './ProductCardStyle'
 import {AiFillHeart, AiOutlineHeart} from 'react-icons/ai'
@@ -13,12 +13,13 @@ interface IItem {
 const ProductCard: React.FC<IItem> = ({product} :IItem ): JSX.Element => {
   const products = useAppSelector(selectProducts)
   const lengthProducts = products.length
+  const dispatch = useAppDispatch()
   
   return (
     <Card length={lengthProducts}>
       <ImgContainer >
         <img src={product.image} alt={product.name} />
-        <FavIcon>{product.isFavourite ? <AiFillHeart/> : <AiOutlineHeart/>}</FavIcon>
+        <FavIcon onClick={() => dispatch(setToFavourite(product._id))}>{product.isFavourite ? <AiFillHeart/> : <AiOutlineHeart/>}</FavIcon>
         
       </ImgContainer>
       <InfoContainer>

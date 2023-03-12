@@ -4,7 +4,9 @@ interface IFormData {
   isFavourite: boolean
   price: number
   section: string
-  image: string | null
+  image: string
+  imageFile?: File
+  // [key: string]: any
 }
 
 export default IFormData

@@ -30,12 +30,11 @@ export const findByQuery = async (query: string): Promise<unknown> => {
 export const addProduct = async (product: IFormData): Promise<unknown> => {
   const backURL = process.env.REACT_APP_API_URL;
   const path = 'new_product';
-
   try {
     const resp = await fetch(`${backURL ?? ''}/${path}/`, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json;charset=utf-8'
+        Accept: 'application/json, text/plain'
       },
       body: JSON.stringify(product)
     });
