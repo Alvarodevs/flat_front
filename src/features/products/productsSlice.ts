@@ -79,7 +79,7 @@ export const productsSlice = createSlice({
       .addCase(
         getProductByQuery.fulfilled,
         (state: ProductsState, action: IActionThunk) => {
-          state.single = action.payload
+          state.items = action.payload.result
           state.status = 'ok'
         }
       )

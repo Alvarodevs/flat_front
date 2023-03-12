@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: flex;
   text-align: center;
 `
-export const InputContainer = styled.div`
+export const InputContainer = styled.form`
   width: 80%;
 `
 

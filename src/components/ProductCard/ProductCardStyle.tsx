@@ -1,7 +1,11 @@
 import styled from 'styled-components'
 
-export const Card = styled.div`
-  width: 100%;
+interface IProps {
+  length: number
+}
+
+export const Card = styled.div<IProps>`
+  width: ${({length}) => length === 1 ? '45%' : '100%'};
   position: relative;
   display: flex;
   justify-content: center;
@@ -16,11 +20,11 @@ export const Card = styled.div`
 `
 
 export const ImgContainer = styled.div`
-  max-width: 180px;
+  width: 100%;
   img{
     width: 100%;
     object-fit: cover;
-    height: 80%;
+    height: 85%;
   }
 `
 
