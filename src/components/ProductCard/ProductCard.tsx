@@ -13,7 +13,7 @@ interface IItem {
 const ProductCard: React.FC<IItem> = ({product} :IItem ): JSX.Element => {
   const products = useAppSelector(selectProducts)
   const lengthProducts = products.length
-  console.log(lengthProducts)
+  
   return (
     <Card length={lengthProducts}>
       <ImgContainer >

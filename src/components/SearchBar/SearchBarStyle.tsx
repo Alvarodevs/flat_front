@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 
+interface IProps {
+  show: boolean
+}
+
 export const Container = styled.div`
   padding: 0.5rem;
   margin: auto;
@@ -48,4 +52,12 @@ export const AddTitle = styled.h6`
       display: none;
     }
   }
+`
+
+export const QueryResult = styled.p<IProps>`
+  display: ${({ show }) => (show ? 'block' : 'none')};
+  padding-left: 10%;
+  font-size: var(--font-size-l);
+  font-family: var(--main-font);
+  color: var(--grey);
 `

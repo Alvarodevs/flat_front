@@ -17,6 +17,10 @@ export const Card = styled.div<IProps>`
   :hover{
     box-shadow: 15px 10px 50px -30px var(--blue);
   }
+
+  @media screen and (max-width:700px){
+    width: 100%;
+  }
 `
 
 export const ImgContainer = styled.div`
