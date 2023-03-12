@@ -62,7 +62,7 @@ export const productsSlice = createSlice({
       .addCase(
         getProducts.fulfilled,
         (state: ProductsState, action: IActionThunk) => {
-          state.items = action.payload
+          state.items = action.payload.products
           state.status = 'ok'
         }
       )
@@ -105,7 +105,8 @@ export const productsSlice = createSlice({
 // export const { FUNCTIONS TO BE EXPORTED } = productsSlice.actions
 
 // Other code such as selectors can use the imported `RootState` type
-export const selectProducts = (state: RootState): IProduct[] =>
-  state.products.items
+export const selectProducts = (state: RootState): IProduct[] => state.products.items
+export const selectProduct = (state: RootState): IProduct => state.products.single
+export const selectAppStatus = (state: RootState): string => state.products.status
 
 export default productsSlice.reducer

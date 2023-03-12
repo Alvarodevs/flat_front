@@ -19,7 +19,8 @@ module.exports = {
   rules: {
     '@typescript-eslint/prefer-nullish-coalescing': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',
-    '@typescript-eslint/space-before-function-paren': 'off'
+    '@typescript-eslint/space-before-function-paren': 'off',
+    "@typescript-eslint/consistent-type-exports": "off"
   },
   settings: {
     react: {

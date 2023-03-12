@@ -1,33 +1,48 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
+// Redux
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import { selectProducts, getProducts } from '../../features/products/productsSlice';
 import ReactPaginate from 'react-paginate';
 import { Container, PaginationContainer } from "./GridContainerStyle"
-import { type IProduct } from "../../interfaces/IProduct"
-import mock_products from '../../db/mock_products.json'
+import type IProduct from "../../interfaces/IProduct"
+// import mock_products from '../../db/mock_products.json'
 import { ITEMS_PER_PAGE } from "../../utils/constants"
 // Components
 import {ProductCard} from "../index"
 
 const GridContainer: React.FC = () => {
-  const [currentPage, setCurrentPage] = useState<number>(0);
+  const [currentPage, setCurrentPage] = useState<number | null>(0);
+  const dispatch = useAppDispatch();
+  const products = useAppSelector(selectProducts)
+  // const appState = useAppSelector(selectAppStatus)
+
+  useEffect(() => {
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-floating-promises
+      dispatch(getProducts())
+    } catch(error){
+      console.log(error)
+    }
+  }, [])
 
   const handlePageChange = ({ selected }: { selected: number }): void => {
     setCurrentPage(selected);
   };
 
-  const offset = currentPage * ITEMS_PER_PAGE;
-  const currentPageData = mock_products.slice(offset, offset + ITEMS_PER_PAGE);
+  const offset = currentPage ?? 0* ITEMS_PER_PAGE;
+  const currentPageData = products ? products.slice(offset, offset + ITEMS_PER_PAGE) : null
 
   return (
     <>
     <Container>
-      {currentPageData.map((item: IProduct, i: number) => {
+      {currentPageData?.map((item: IProduct, i: number) => {
         return <ProductCard key={i} product={item} />
       })}
       
     </Container>
     <PaginationContainer>
     <ReactPaginate
-        pageCount={Math.ceil(mock_products.length / ITEMS_PER_PAGE)}
+        pageCount={Math.ceil(products.length / ITEMS_PER_PAGE)}
         marginPagesDisplayed={2}
         pageRangeDisplayed={3}
         onPageChange={handlePageChange}
