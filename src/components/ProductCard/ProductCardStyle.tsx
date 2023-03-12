@@ -6,6 +6,7 @@ interface IProps {
 
 export const Card = styled.div<IProps>`
   width: ${({length}) => length === 1 ? '45%' : '100%'};
+  height: ${({length}) => length === 1 ? '75%' : 'auto'};
   position: relative;
   display: flex;
   justify-content: center;
@@ -29,6 +30,7 @@ export const ImgContainer = styled.div`
     width: 100%;
     object-fit: cover;
     height: 85%;
+    border-radius: 2rem 0 2rem 0;
   }
 `
 

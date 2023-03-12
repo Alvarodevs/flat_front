@@ -19,15 +19,15 @@ padding: 0 0.2rem;
   }
   .page-item{
     margin: 0.2rem;
-    background-color: var(--blue);
+    background-color: var(--white);
     border-radius: 10px;
     padding:0.2rem 0.5rem;
-    color: var(--white);
+    color: var(--blue);
     font-weight: 600;
   }
   .active{
-    background-color: var(--lightBlue);
-    color: var(--black);
+    background-color: var(--blue);
+    color: var(--white);
   }
   .page-link{
     :hover{

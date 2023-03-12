@@ -6,7 +6,7 @@ interface IFormData {
   section: string
   image: string
   imageFile?: File
-  // [key: string]: any
+  [key: string]: any
 }
 
 export default IFormData

@@ -1,4 +1,4 @@
-import type IFormData from "../interfaces/IFormData";
+// import type IFormData from "../interfaces/IFormData";
 
 export const getAllProducts = async (): Promise<unknown> => {
   const backURL = process.env.REACT_APP_API_URL
@@ -27,7 +27,8 @@ export const findByQuery = async (query: string): Promise<unknown> => {
   }
 };
 
-export const addProduct = async (product: IFormData): Promise<unknown> => {
+export const addProduct = async (product: FormData): Promise<unknown> => {
+  console.log(product)
   const backURL = process.env.REACT_APP_API_URL;
   const path = 'new_product';
   try {
@@ -36,7 +37,7 @@ export const addProduct = async (product: IFormData): Promise<unknown> => {
       headers: {
         Accept: 'application/json, text/plain'
       },
-      body: JSON.stringify(product)
+      body: product
     });
     const result = await resp.json();
     return result;

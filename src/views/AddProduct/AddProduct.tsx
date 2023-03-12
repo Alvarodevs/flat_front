@@ -32,30 +32,24 @@ const AddProductForm: React.FC = (): JSX.Element => {
   const [formData, setFormData] = useState<IFormData>(FORM_DATA_INIT_STATE)
   const [image, file, handleImageUpload, clearImage] = useImage()
   const dispatch = useAppDispatch()
-  // const products = useAppSelector(selectProducts)
   const navigate = useNavigate()
 
   useEffect(() => {
     setFormData({ ...formData, image, imageFile: file})
   }, [image])
-  // console.log(formData)
-  // const form = new FormData();
-  // console.log(form)
-    // for (const input in formData) {
-    //   form.append(input, formData[input]);
-    // }
   
   // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    const form = new FormData()
+    for (const input in formData) {
+      form.append(input, formData[input]);
+    }
     event.preventDefault()
     if (validationForm(formData)) {
-      // if(blobFile){
-      //   const finalFormData = {product: {...formData}, image: blobFile}
       // eslint-disable-next-line @typescript-eslint/no-floating-promises
-      dispatch(addNewProduct(formData))
+      dispatch(addNewProduct(form))
       navigate('/')
     }
-    
   }
 
   const handleChange = (

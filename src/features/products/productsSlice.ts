@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk, type PayloadAction } from '@reduxjs/toolkit'
 import {
   type IActionThunk,
-  type IFormData,
+  // type IFormData,
   type IProduct
 } from '../../interfaces'
 import { findByQuery, getAllProducts, addProduct } from '../../services/api'
@@ -29,7 +29,7 @@ export const getProductByQuery = createAsyncThunk(
 
 export const addNewProduct = createAsyncThunk(
   'post/addProduct',
-  async (product: IFormData) => {
+  async (product: any) => {
     console.log('SLICE',product)
     const response = await addProduct(product)
     return response
